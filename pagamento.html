@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Carbon Life - Doação</title>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="css/stylepg.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/animate.css">
+
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-sm navbar-dark bg-success ">
+
+    <img class="folha1 " src="img/folhas PNG.png" alt="">
+    <img class="folha2" src="img/folhas PNG.png" alt="">
+    <img class="folha3" src="img/folhas PNG.png" alt="">
+    <img class="folha4" src="img/folhas PNG.png" alt="">
+    <img class="folha5" src="img/folhas PNG.png" alt="">
+
+    <!-- Menu Hamburguer -->
+    <button class="navbar-toggler" data-toggle="collapse" data-target="#nav-target">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse menu " id="nav-target">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item"><a class="nav-link text-white text-uppercase" href="index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link text-white text-uppercase" href="quemsomos.html">Quem Somos</a>
+            </li>
+            <li class="nav-item"><a class="nav-link text-white text-uppercase" href="pagamento.html">Doações</a></li>
+            <li class="nav-item"><a class="nav-link text-white text-uppercase" href="equipe.html">Equipe</a></li>
+        </ul>
+    </div>
+</nav>
+ 
+ 
+  <div class="div_pagamento">
+    <div class="container">
+      <div class="col1">
+        <div class="card">
+          <div class="front">
+            <div class="type">
+              <img class="bankid" />
+            </div>
+            <span class="chip"></span>
+            <span class="card_number">&#x25CF;&#x25CF;&#x25CF;&#x25CF; &#x25CF;&#x25CF;&#x25CF;&#x25CF;
+              &#x25CF;&#x25CF;&#x25CF;&#x25CF; &#x25CF;&#x25CF;&#x25CF;&#x25CF; </span>
+            <div class="date"><span class="date_value">MM / AAAA</span></div>
+            <span class="fullname">Nome Completo</span>
+          </div>
+          <div class="back">
+            <div class="magnetic"></div>
+            <div class="bar"></div>
+            <span class="seccode">&#x25CF;&#x25CF;&#x25CF;</span>
+            <span class="chip"></span><span class="disclaimer">This card is property of Random Bank of Random
+              corporation.
+              <br> If found please return to Random Bank of Random corporation - 21968 Paris, Verdi Street, 34 </span>
+          </div>
+        </div>
+      </div>
+      <div class="col2">
+        <label>Numero do cartão</label>
+        <input class="number" type="text" ng-model="ncard" maxlength="19"
+          onkeypress='return event.charCode >= 48 && event.charCode <= 57' />
+        <label>Nome Completo</label>
+        <input class="inputname" type="text" placeholder="" />
+        <label>Data de validade</label>
+        <input class="expire" type="text" placeholder="MM / YYYY" />
+        <label>Código de Segurança</label>
+        <input class="ccv" type="text" placeholder="CVC" maxlength="3"
+          onkeypress='return event.charCode >= 48 && event.charCode <= 57' />
+        <a href="transacionando.html"><button class="buy"><i class="material-icons">lock</i> Realizar
+            Pagamento</button></a>
+      </div>
+    </div>
+    
+  </div>
+  <div class="container_agradecimento">
+    <h1>Lembre-se, você está melhorando o ar que respira.</h1>
+  </div>
+  
+
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.1/angular.min.js'></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js'></script>
+  <script src="js/script.js"></script>
+
+</body>
+
+</html>
