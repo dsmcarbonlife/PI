@@ -1,0 +1,69 @@
+﻿body html{
+	font-family: arial, sans-serif, helvetica;
+	height: 100%;
+}
+
+
+/****Navegação****/
+
+ul{
+	font-family: arial;
+}
+
+ul li{
+	padding: 0 3px;
+}
+
+ul li a:hover{
+	color: red;
+}
+
+.arquivo{
+	height: 550px;
+	margin: 0 auto;
+	width: 100%
+}
+
+.fixed { position: fixed; top: 0; left: 0; }
+
+.tabela{
+	margin: 120px auto;
+}
+
+/*Cores dos icones de relatórios */
+td a {
+	text-decoration: none !important;
+}
+
+td.details-control {
+            text-align:center;
+            color:forestgreen;
+    cursor: pointer;
+}
+tr.shown td.details-control {
+    text-align:center; 
+    color:red;
+}
+/*Configuração do conteúdo abaixo do rodapé*/
+.conteudo{
+	margin-top: 110px;
+	text-align: center;
+	font-family: arial, sans-serif;
+}
+/*Rodapé*/
+.rodape{
+	font-family: arial,sans-serif;
+	text-align: center;	
+	font-size: 0.8em;
+	background: white;
+}
+/*Borda da tela de contato*/
+.teste{
+	border: 1px solid black;
+	border-radius: 5px;
+	padding: 20px;
+}
+/*Padding da imagem na tela index*/
+.furacao{
+	padding-top: 50px;
+}
